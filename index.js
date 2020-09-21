@@ -8,23 +8,10 @@ class Circle {
     }
   }
 
-  get radius(){
-   return  this._radius
-  }
-
-  set radius(radius){
-
-    if (radius > 0) {
-    this._radius = radius;
-    } else {
-    throw new Error('A Circle cannot have negative side radius');
-    }
-  }
 
   get diameter(){
     return  this._radius * 2
   }
-
 
 
   get circumference(){
